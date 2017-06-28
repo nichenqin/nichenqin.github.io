@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+}
+
+#wrapper>section {
+  overflow: hidden !important;
+}
+
+.welcome {
+  background: #ffe57f;
+}
+
+.projects {
+  background: #82b1ff;
+}
+
+.about-me {
+  background: #ffe57f;
+}
