@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #333;
+}
+
+.header {
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 20px;
+  background-color: transparent;
+  z-index: 2;
+  font-weight: 500;
+  &__brand {
+    float: left;
+    height: 100%;
+    margin-right: 20px;
+  }
+  &__nav {
+    float: left;
+    height: 100%;
+    &-item {
+      height: 100%;
+      display: inline-block;
+      cursor: pointer;
+      &:hover,
+      &.active {
+        cursor: pointer;
+      }
+    }
+  }
+  &__contact {
+    height: 100%;
+    float: right;
+  }
+}
+
+.main {
+  .section {
+    overflow: hidden !important;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .welcome {
+    background: #ffe57f;
+    &__title {}
+  }
+  .projects {
+    background: #82b1ff;
+  }
+  .about-me {
+    background: #b388ff;
+  }
+}
