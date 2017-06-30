@@ -12,22 +12,38 @@
 
 <body>
   <header class="header">
-    <div class="header__brand">倪晨钦</div>
     <div class="header__nav" data-wall-section-nav>
       <li class="header__nav-item">欢迎</li>
       <li class="header__nav-item">项目</li>
       <li class="header__nav-item">关于我</li>
     </div>
     <div class="header__contact">
-      <a href="##"><i class="fa fa-github fa-2x"></i></a>
+      <a target="_blank" href="http://nichenqin.com"><i class="fa fa-home fa-2x"></i></a>
+      <a target="_blank" href="https://github.com/nichenqin1001"><i class="fa fa-github fa-2x"></i></a>
+      <a href="##"><i class="fa fa-qq fa-2x"></i></a>
+      <a href="##"><i class="fa fa-weixin fa-2x"></i></a>
     </div>
   </header>
-  <div id="wrapper" class="main">
+  <div id="main" class="main">
     <section class="section welcome">
-      <h1 class=“welcome__title”>你好</h1>
+      <div class="wrapper">
+        <div class="welcome__main"> 你好 </div>
+        <div class="welcome__next">查看我的项目</div>
+      </div>
     </section>
-    <section class="section projects">项目</section>
-    <section class="section about-me">关于我</section>
+    <section class="section projects">
+      <div class="projects"></div>
+    </section>
+    <section class="section about-me">
+      <div class="about-me">
+
+      </div>
+    </section>
+  </div>
+  <div class="dots" data-wall-section-nav>
+    <div class="dots__dot"></div>
+    <div class="dots__dot"></div>
+    <div class="dots__dot"></div>
   </div>
   <script src="./lib/wall.min.js"></script>
   <script src="./index.js"></script>
