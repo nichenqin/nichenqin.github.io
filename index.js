@@ -3,6 +3,7 @@
     sectionAnimateDuration: 0.6
   }
   var resume = new Wall('#main', wallOptions);
+
   var welcomeMain = document.querySelector('.welcome__main');
   var welcomeNext = document.querySelector('.welcome__next');
 
