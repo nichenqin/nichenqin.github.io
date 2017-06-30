@@ -22,7 +22,6 @@ a {
 .header {
   position: fixed;
   width: 100%;
-  overflow: hidden;
   padding: 10px 20px;
   background: none;
   z-index: 2;
@@ -30,6 +29,7 @@ a {
 }
 
 .header__nav {
+  max-width: 50%;
   float: left;
 }
 
@@ -58,6 +58,7 @@ a {
 }
 
 .header__contact {
+  max-width: 50%;
   height: 100%;
   float: right;
 }
@@ -70,6 +71,30 @@ a {
 
 .header__contact a:hover {
   color: #fff59d;
+}
+
+.header__contact__item {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+}
+
+.header__contact__item__weixin {
+  position: absolute;
+  top: calc(100% + 15px);
+  right: 0;
+  background: #ffe082;
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all .2s ease-in-out;
+}
+
+a.weixin:hover + .header__contact__item__weixin {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .main .section {
@@ -200,7 +225,7 @@ a {
 }
 
 .about-me {
-  background: #b388ff;
+  background: #f9a825;
 }
 
 .dots {
