@@ -67,7 +67,8 @@ a {
         position: absolute;
         top: calc(100% + 15px);
         right: 0;
-        background: #ffe082;
+        background-image: url('./assets/weixin.png');
+        background-size: cover;
         height: 150px;
         width: 150px;
         opacity: 0;
@@ -142,6 +143,11 @@ a {
     width: 98%;
     margin: 0 auto;
     padding: 0 40px;
+  }
+  &__header {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all .3s ease-in;
   }
   &__project {
     float: left;
@@ -223,6 +229,7 @@ a {
 
 .current {
   .projects {
+    &__header,
     &__project {
       opacity: 1;
       transform: translateX(0);
