@@ -72,17 +72,19 @@ a {
     .wrapper {
       position: relative;
       height: 100%;
-      overflow: hidden;
     }
   }
 }
 
 .welcome {
   background: #303f9f;
-  .wrapper>* {
-    transition: transform .5s ease-out;
-    &.showcase {
-      transform: translateY(-45px);
+  .wrapper {
+    overflow: hidden;
+    >* {
+      transition: transform .5s ease-out;
+      &.showcase {
+        transform: translateY(-45px);
+      }
     }
   }
   &__main {
@@ -96,6 +98,7 @@ a {
       width: 98%;
       max-width: 400px;
       &-title {
+        text-align: center;
         font-size: 70px;
         font-weight: 700;
       }
@@ -121,13 +124,14 @@ a {
     margin: 0 auto;
     padding: 0 40px;
     padding-top: 100px;
-    overflow: hidden;
+    padding-bottom: 100px;
   }
   &__project {
     float: left;
     color: #333;
     width: 300px;
     margin-right: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
     background: #fff;
     opacity: 0;
@@ -205,6 +209,14 @@ a {
     &__project {
       opacity: 1;
       transform: translateX(0);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .projects {
+    .wrapper {
+      padding-top: 0;
     }
   }
 }

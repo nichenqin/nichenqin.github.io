@@ -79,11 +79,14 @@ a {
 .main .section .wrapper {
   position: relative;
   height: 100%;
-  overflow: hidden;
 }
 
 .welcome {
   background: #303f9f;
+}
+
+.welcome .wrapper {
+  overflow: hidden;
 }
 
 .welcome .wrapper > * {
@@ -109,6 +112,7 @@ a {
 }
 
 .welcome__main__intro-title {
+  text-align: center;
   font-size: 70px;
   font-weight: 700;
 }
@@ -134,7 +138,7 @@ a {
   margin: 0 auto;
   padding: 0 40px;
   padding-top: 100px;
-  overflow: hidden;
+  padding-bottom: 100px;
 }
 
 .projects__project {
@@ -142,6 +146,7 @@ a {
   color: #333;
   width: 300px;
   margin-right: 20px;
+  margin-bottom: 20px;
   border-radius: 5px;
   background: #fff;
   opacity: 0;
@@ -228,4 +233,10 @@ a {
 .current .projects__project {
   opacity: 1;
   transform: translateX(0);
+}
+
+@media (max-width: 450px) {
+  .projects .wrapper {
+    padding-top: 0;
+  }
 }
