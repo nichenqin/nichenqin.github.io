@@ -1,5 +1,8 @@
 (function () {
-  var resume = new Wall('#main');
+  var wallOptions = {
+    sectionAnimateDuration: 0.6
+  }
+  var resume = new Wall('#main', wallOptions);
   var welcomeMain = document.querySelector('.welcome__main');
   var welcomeNext = document.querySelector('.welcome__next');
 
@@ -11,6 +14,6 @@
     setTimeout(function () {
       welcomeMain.classList.add('showcase');
       welcomeNext.classList.add('showcase');
-    }, 2000)
+    }, 1000)
   }
 })()
