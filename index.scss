@@ -10,11 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   color: #fff;
 }
@@ -61,7 +56,7 @@ a {
       margin-left: 10px;
       transition: color .2s;
       &:hover {
-        color: #fff59d;
+        color: #fdd835;
       }
     }
     &__item {
@@ -91,9 +86,11 @@ a {
 .main {
   .section {
     padding-top: 70px;
+    overflow: hidden !important;
     .wrapper {
       position: relative;
       height: 100%;
+      overflow: hidden;
     }
   }
 }
@@ -145,8 +142,6 @@ a {
     width: 98%;
     margin: 0 auto;
     padding: 0 40px;
-    padding-top: 100px;
-    padding-bottom: 100px;
   }
   &__project {
     float: left;
@@ -231,14 +226,6 @@ a {
     &__project {
       opacity: 1;
       transform: translateX(0);
-    }
-  }
-}
-
-@media (max-width: 450px) {
-  .projects {
-    .wrapper {
-      padding-top: 0;
     }
   }
 }

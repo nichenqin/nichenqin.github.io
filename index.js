@@ -11,10 +11,8 @@
     resume.nextSection()
   });
 
-  window.onload = function () {
-    setTimeout(function () {
-      welcomeMain.classList.add('showcase');
-      welcomeNext.classList.add('showcase');
-    }, 1000)
-  }
+  setTimeout(function () {
+    welcomeMain.classList.add('showcase');
+    welcomeNext.classList.add('showcase');
+  }, 1500)
 })()

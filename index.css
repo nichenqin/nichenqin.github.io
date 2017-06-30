@@ -10,11 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   color: #fff;
 }
@@ -70,7 +65,7 @@ a {
 }
 
 .header__contact a:hover {
-  color: #fff59d;
+  color: #fdd835;
 }
 
 .header__contact__item {
@@ -99,11 +94,13 @@ a.weixin:hover + .header__contact__item__weixin {
 
 .main .section {
   padding-top: 70px;
+  overflow: hidden !important;
 }
 
 .main .section .wrapper {
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 .welcome {
@@ -162,8 +159,6 @@ a.weixin:hover + .header__contact__item__weixin {
   width: 98%;
   margin: 0 auto;
   padding: 0 40px;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .projects__project {
@@ -258,10 +253,4 @@ a.weixin:hover + .header__contact__item__weixin {
 .current .projects__project {
   opacity: 1;
   transform: translateX(0);
-}
-
-@media (max-width: 450px) {
-  .projects .wrapper {
-    padding-top: 0;
-  }
 }
