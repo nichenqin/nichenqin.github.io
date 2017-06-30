@@ -74,14 +74,31 @@ a {
   background: #303f9f;
 }
 
-.main .welcome__main {
-  width: 100%;
-  height: 100%;
-  transition: all .5s ease;
+.main .welcome .wrapper > * {
+  transition: transform .5s ease-out;
 }
 
-.main .welcome__main.showcase {
+.main .welcome .wrapper > *.showcase {
   transform: translateY(-45px);
+}
+
+.main .welcome__main {
+  position: relative;
+  height: 100%;
+}
+
+.main .welcome__main__intro {
+  position: absolute;
+  top: 177px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 98%;
+  max-width: 400px;
+}
+
+.main .welcome__main__intro-title {
+  font-size: 70px;
+  font-weight: 700;
 }
 
 .main .welcome__next {
@@ -93,11 +110,6 @@ a {
   box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
   font-weight: bold;
   cursor: pointer;
-  transition: all .5s ease;
-}
-
-.main .welcome__next.showcase {
-  transform: translateY(-45px);
 }
 
 .main .projects {
@@ -121,7 +133,7 @@ a {
   height: 16px;
   margin-bottom: 10px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   opacity: .4;
   cursor: pointer;
 }

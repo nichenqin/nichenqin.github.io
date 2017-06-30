@@ -65,12 +65,26 @@ a {
   }
   .welcome {
     background: #303f9f;
-    &__main {
-      width: 100%;
-      height: 100%;
-      transition: all .5s ease;
+    .wrapper>* {
+      transition: transform .5s ease-out;
       &.showcase {
         transform: translateY(-45px);
+      }
+    }
+    &__main {
+      position: relative;
+      height: 100%;
+      &__intro {
+        position: absolute;
+        top: 177px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 98%;
+        max-width: 400px;
+        &-title {
+          font-size: 70px;
+          font-weight: 700;
+        }
       }
     }
     &__next {
@@ -82,10 +96,6 @@ a {
       box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
       font-weight: bold;
       cursor: pointer;
-      transition: all .5s ease;
-      &.showcase {
-        transform: translateY(-45px);
-      }
     }
   }
   .projects {
@@ -107,7 +117,7 @@ a {
     height: 16px;
     margin-bottom: 10px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     opacity: .4;
     cursor: pointer;
     &:hover {
