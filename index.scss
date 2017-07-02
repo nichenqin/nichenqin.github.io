@@ -128,6 +128,15 @@ a {
         font-size: 70px;
         font-weight: 700;
       }
+      &-contact {
+        .fa {
+          margin-right: 20px;
+          transition: transform .2s ease-out;
+        }
+        a:hover .fa {
+          transform: scale(1.1)
+        }
+      }
     }
   }
   &__next {
