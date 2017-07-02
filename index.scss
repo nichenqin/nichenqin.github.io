@@ -14,6 +14,12 @@ a {
   color: #fff;
 }
 
+.clear-fix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -87,11 +93,9 @@ a {
 .main {
   .section {
     padding-top: 70px;
-    overflow: hidden !important;
     .wrapper {
       position: relative;
-      height: 100%;
-      overflow: hidden;
+      width: 100%;
     }
   }
 }
@@ -99,6 +103,8 @@ a {
 .welcome {
   background: #303f9f;
   .wrapper {
+    position: relative;
+    height: 100%;
     overflow: hidden;
     >* {
       transition: transform .5s ease-out;
@@ -234,5 +240,28 @@ a {
       opacity: 1;
       transform: translateX(0);
     }
+  }
+}
+
+@media (max-width:450px) {
+  .projects {
+    .wrapper {
+      padding: 0;
+      padding-bottom: 50px;
+    }
+    &__header {
+      text-align: center;
+    }
+    &__project {
+      float: none;
+      display: block;
+      width: 98%;
+      max-width: 300px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+  .dots {
+    display: none;
   }
 }

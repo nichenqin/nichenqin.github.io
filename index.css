@@ -14,6 +14,12 @@ a {
   color: #fff;
 }
 
+.clear-fix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -95,13 +101,11 @@ a.weixin:hover + .header__contact__item__weixin {
 
 .main .section {
   padding-top: 70px;
-  overflow: hidden !important;
 }
 
 .main .section .wrapper {
   position: relative;
-  height: 100%;
-  overflow: hidden;
+  width: 100%;
 }
 
 .welcome {
@@ -109,6 +113,8 @@ a.weixin:hover + .header__contact__item__weixin {
 }
 
 .welcome .wrapper {
+  position: relative;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -260,4 +266,25 @@ a.weixin:hover + .header__contact__item__weixin {
 .current .projects__header, .current .projects__project {
   opacity: 1;
   transform: translateX(0);
+}
+
+@media (max-width: 450px) {
+  .projects .wrapper {
+    padding: 0;
+    padding-bottom: 50px;
+  }
+  .projects__header {
+    text-align: center;
+  }
+  .projects__project {
+    float: none;
+    display: block;
+    width: 98%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .dots {
+    display: none;
+  }
 }
