@@ -109,7 +109,7 @@ a.weixin:hover + .header__contact__item__weixin {
 }
 
 .welcome {
-  background: #303f9f;
+  background-image: url("http://area.sinaapp.com/bingImg");
 }
 
 .welcome .wrapper {
