@@ -214,6 +214,21 @@ a {
   }
 }
 
+.demos {
+  background: #006978;
+  .wrapper {
+    max-width: 1200px;
+    width: 98%;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+  &__header {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all .3s ease-in;
+  }
+}
+
 .about-me {
   background: #f9a825;
 }
@@ -248,6 +263,12 @@ a {
     &__project {
       opacity: 1;
       transform: translateX(0);
+    }
+  }
+  .demos {
+    &__header {
+      opacity: 1;
+      transform: translateX(0)
     }
   }
 }

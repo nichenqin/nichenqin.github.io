@@ -241,6 +241,23 @@ a.weixin:hover + .header__contact__item__weixin {
   transition-delay: .1s;
 }
 
+.demos {
+  background: #006978;
+}
+
+.demos .wrapper {
+  max-width: 1200px;
+  width: 98%;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.demos__header {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all .3s ease-in;
+}
+
 .about-me {
   background: #f9a825;
 }
@@ -273,6 +290,11 @@ a.weixin:hover + .header__contact__item__weixin {
 }
 
 .current .projects__header, .current .projects__project {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.current .demos__header {
   opacity: 1;
   transform: translateX(0);
 }
