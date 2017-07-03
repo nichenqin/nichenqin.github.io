@@ -153,11 +153,21 @@ a {
 
 .projects {
   background: #56bc8a;
+  position: relative;
   .wrapper {
-    max-width: 1200px;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 0 120px;
+    overflow: hidden;
+    height: 100%;
+    >.fa {
+      font-size: 700px;
+      display: block;
+      color: darken(#56bc8a, 2);
+      position: absolute;
+      right: -30px;
+      bottom: -30px;
+    }
   }
   &__header {
     opacity: 0;
@@ -227,6 +237,10 @@ a {
     transform: translateX(-30px);
     transition: all .3s ease-in;
   }
+}
+
+.techs {
+  background: #34515e;
 }
 
 .about-me {

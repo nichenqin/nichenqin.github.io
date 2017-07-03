@@ -168,13 +168,24 @@ a.weixin:hover + .header__contact__item__weixin {
 
 .projects {
   background: #56bc8a;
+  position: relative;
 }
 
 .projects .wrapper {
-  max-width: 1200px;
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 120px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.projects .wrapper > .fa {
+  font-size: 700px;
+  display: block;
+  color: #4fb985;
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
 }
 
 .projects__header {
@@ -256,6 +267,10 @@ a.weixin:hover + .header__contact__item__weixin {
   opacity: 0;
   transform: translateX(-30px);
   transition: all .3s ease-in;
+}
+
+.techs {
+  background: #34515e;
 }
 
 .about-me {
