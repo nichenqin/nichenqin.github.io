@@ -298,7 +298,10 @@ a.weixin:hover + .header__contact__item__weixin {
 
 .projects__more.button {
   position: absolute;
-  margin: 0 auto;
+  bottom: 120px;
+  left: 50%;
+  transform: translate(-50%);
+  margin: auto;
 }
 
 .demos {
@@ -341,7 +344,7 @@ a.weixin:hover + .header__contact__item__weixin {
   width: 98%;
   max-width: 600px;
   height: 400px;
-  margin: 50px auto auto auto;
+  margin: 70px auto auto auto;
 }
 
 .techs__graphic__tech {
