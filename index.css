@@ -30,7 +30,6 @@ a {
 }
 
 .header__nav {
-  max-width: 50%;
   float: left;
 }
 
@@ -59,7 +58,6 @@ a {
 }
 
 .header__contact {
-  max-width: 50%;
   height: 100%;
   float: right;
 }
@@ -101,11 +99,6 @@ a.weixin:hover + .header__contact__item__weixin {
 
 .main .section {
   padding-top: 70px;
-}
-
-.main .section .wrapper {
-  position: relative;
-  width: 100%;
 }
 
 .welcome {
@@ -171,21 +164,19 @@ a.weixin:hover + .header__contact__item__weixin {
   position: relative;
 }
 
-.projects .wrapper {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 120px;
-  overflow: hidden;
-  height: 100%;
-}
-
-.projects .wrapper > .fa {
+.projects > .fa {
   font-size: 700px;
   display: block;
   color: #4fb985;
   position: absolute;
   right: -30px;
-  bottom: -30px;
+  bottom: 0;
+}
+
+.projects .wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 120px;
 }
 
 .projects__header {
@@ -216,7 +207,7 @@ a.weixin:hover + .header__contact__item__weixin {
 }
 
 .projects__project-sub-header {
-  padding: 5px 20px;
+  padding: 5px 20px 10px 20px;
   font-size: 15px;
 }
 
@@ -260,7 +251,7 @@ a.weixin:hover + .header__contact__item__weixin {
   max-width: 1200px;
   width: 98%;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 120px;
 }
 
 .demos__header {
@@ -271,6 +262,37 @@ a.weixin:hover + .header__contact__item__weixin {
 
 .techs {
   background: #34515e;
+}
+
+.techs .wrapper {
+  max-width: 1200px;
+  width: 98%;
+  margin: 0 auto;
+  padding: 0 120px;
+  height: 100%;
+  position: relative;
+}
+
+.techs__graphic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
+
+.techs__graphic__tech {
+  float: left;
+  height: 120px;
+  width: 120px;
+  margin-right: 30px;
+}
+
+.techs__graphic__tech::last-child {
+  margin-right: 0;
 }
 
 .about-me {
@@ -315,6 +337,13 @@ a.weixin:hover + .header__contact__item__weixin {
 }
 
 @media (max-width: 450px) {
+  .header__nav {
+    float: none;
+    width: 100%;
+  }
+  .header__contact {
+    display: none;
+  }
   .projects .wrapper {
     padding: 0;
     padding-bottom: 50px;
