@@ -316,6 +316,7 @@ a.weixin:hover + .header__contact__item__weixin {
 
 .techs {
   background: #34515e;
+  position: relative;
 }
 
 .techs .wrapper {
@@ -391,6 +392,13 @@ a.weixin:hover + .header__contact__item__weixin {
 
 .techs__graphic__tech:nth-of-type(12) {
   transition-delay: .55s;
+}
+
+.techs > .button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 80px;
 }
 
 .about-me {

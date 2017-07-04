@@ -284,6 +284,7 @@ a {
 
 .techs {
   background: #34515e;
+  position: relative;
   .wrapper {
     max-width: 1200px;
     width: 98%;
@@ -344,6 +345,12 @@ a {
         transition-delay: .55s
       }
     }
+  }
+  >.button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
   }
 }
 
