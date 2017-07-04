@@ -2,6 +2,11 @@ html {
   color: #fff;
   box-sizing: border-box;
   font-family: "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
 }
 
 *,
@@ -12,6 +17,25 @@ html {
 
 a {
   color: #fff;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  background: #4284f3;
+  padding: 14px 24px;
+  margin: 20px 0;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-size: 1.6rem;
+  border: 0;
+  outline: 0;
+  transition: background-color .3s;
+}
+
+.button:hover {
+  background: #3b77db;
 }
 
 .clear-fix::after {
@@ -101,7 +125,31 @@ a.weixin:hover + .header__contact__item__weixin {
   padding-top: 70px;
 }
 
+.main .section:first-child::after, .main .section:last-child::after {
+  display: none;
+}
+
+.main .section::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border-color: #fff;
+  border-style: solid;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  transform: translateX(-50%) rotate(45deg);
+  cursor: pointer;
+}
+
 .welcome {
+  background-color: #4284f3;
   background-image: url("http://area.sinaapp.com/bingImg");
 }
 
@@ -243,8 +291,12 @@ a.weixin:hover + .header__contact__item__weixin {
   transition-delay: .1s;
 }
 
+.projects__project:nth-of-type(3) {
+  transition-delay: .2s;
+}
+
 .demos {
-  background: #006978;
+  background: #c63f17;
 }
 
 .demos .wrapper {
@@ -326,6 +378,10 @@ a.weixin:hover + .header__contact__item__weixin {
   background-color: #fff;
 }
 
+.current.section::after {
+  animation: moving-arrow 1s infinite;
+}
+
 .current .projects__header, .current .projects__project {
   opacity: 1;
   transform: translateX(0);
@@ -361,5 +417,17 @@ a.weixin:hover + .header__contact__item__weixin {
   }
   .dots {
     display: none;
+  }
+}
+
+@keyframes moving-arrow {
+  from {
+    transform: translateY(0) translateX(-50%) rotate(45deg);
+  }
+  50% {
+    transform: translateY(-20%) translateX(-50%) rotate(45deg);
+  }
+  to {
+    transform: translateY(0) translateX(-50%) rotate(45deg);
   }
 }
