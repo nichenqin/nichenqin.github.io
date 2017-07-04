@@ -205,7 +205,8 @@ a {
     bottom: 0;
   }
   .wrapper {
-    width: 100%;
+    max-width: 1200px;
+    width: 98%;
     margin: 0 auto;
     padding: 0 120px;
   }
@@ -264,6 +265,10 @@ a {
     &:nth-of-type(3) {
       transition-delay: .2s;
     }
+  }
+  &__more.button {
+    position: absolute;
+    margin: 0 auto;
   }
 }
 
