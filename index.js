@@ -1,3 +1,7 @@
+function toArray(dom) {
+  return Array.prototype.slice.call(dom);
+}
+
 (function () {
   var wallOptions = {
     sectionAnimateDuration: 0.6
@@ -15,4 +19,11 @@
     welcomeMain.classList.add('showcase');
     welcomeNext.classList.add('showcase');
   }, 1500)
+
+  var nextArrows = toArray(document.getElementsByClassName('arrow'));
+  nextArrows.forEach(function (arrow) {
+    arrow.addEventListener('click', function () {
+      resume.nextSection();
+    })
+  })
 })()

@@ -3,9 +3,11 @@ html {
   box-sizing: border-box;
   font-family: "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
+  height: 100%;
   font-size: 1.5rem;
 }
 
@@ -127,11 +129,7 @@ a.weixin:hover + .header__contact__item__weixin {
   padding-top: 70px;
 }
 
-.main .section:first-child::after, .main .section:last-child::after {
-  display: none;
-}
-
-.main .section::after {
+.main .section .wrapper > .arrow {
   display: block;
   content: '';
   position: absolute;
@@ -438,7 +436,7 @@ a.weixin:hover + .header__contact__item__weixin {
   background-color: #fff;
 }
 
-.current.section::after {
+.current .arrow {
   animation: moving-arrow 1s infinite;
 }
 
