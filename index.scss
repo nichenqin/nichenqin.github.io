@@ -113,44 +113,52 @@ a {
   }
 }
 
-.main {
-  .section {
-    position: relative;
-    height: 100%;
-    padding-top: 70px;
-    .wrapper {
-      >.arrow {
-        display: block;
-        position: absolute;
-        bottom: 40px;
-        left: 50%;
-        width: 40px;
-        height: 40px;
-        background: none;
-        border-color: #fff;
-        border-style: solid;
-        border-top-color: transparent;
-        border-left-color: transparent;
-        border-right-width: 3px;
-        border-bottom-width: 3px;
-        transform: translateX(-50%) rotate(45deg);
-        cursor: pointer;
-      }
-    }
-    >.fa {
-      font-size: 700px;
-      display: block;
-      position: absolute;
-      right: -30px;
-      bottom: 0;
-    }
+.section {
+  height: 100%;
+  padding-top: 70px;
+  >.fa {
+    font-size: 700px;
+    display: block;
+    position: absolute;
+    right: -30px;
+    bottom: 0;
   }
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  width: 98%;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.arrow {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border-color: #fff;
+  border-style: solid;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  transform: translateX(-50%) rotate(45deg);
+  cursor: pointer;
 }
 
 .welcome {
   background-color: #4284f3;
   background-image: url("http://area.sinaapp.com/bingImg");
   .wrapper {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     height: 100%;
     overflow: hidden;
     >* {
@@ -202,12 +210,6 @@ a {
   background: #56bc8a;
   >.fa {
     color: darken(#56bc8a, 2);
-  }
-  .wrapper {
-    max-width: 1200px;
-    width: 98%;
-    margin: 0 auto;
-    padding: 0 120px;
   }
   &__header {
     opacity: 0;
@@ -276,16 +278,35 @@ a {
 
 .demos {
   background: #9c4dcc;
-  .wrapper {
-    max-width: 1200px;
-    width: 98%;
-    margin: 0 auto;
-    padding: 0 120px;
+  >.fa {
+    color: darken(#9c4dcc, 2);
   }
   &__header {
     opacity: 0;
     transform: translateX(-30px);
     transition: all .3s ease-in;
+  }
+  &__demos {
+    &-demo {
+      float: left;
+      width: calc(33.33333333% - 20px);
+      margin-right: 20px;
+      margin-bottom: 20px;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &__img {
+        display: block;
+        background-size: cover;
+        padding-bottom: 100%;
+        &.weather {
+          background-image: url('./assets/weather-forecast.png');
+        }
+        &.frogger {
+          background-image: url('./assets/frogger.png');
+        }
+      }
+    }
   }
 }
 
@@ -295,12 +316,6 @@ a {
   >.fa {
     color: darken(#34515e, 2)
   }
-  .wrapper {
-    max-width: 1200px;
-    width: 98%;
-    margin: 0 auto;
-    padding: 0 120px;
-  }
   &__graphic {
     position: absolute;
     top: 0;
@@ -309,8 +324,8 @@ a {
     left: 0;
     width: 98%;
     max-width: 600px;
-    height: 400px;
-    margin: 100px auto auto auto;
+    padding: 120px 0;
+    margin: auto;
     &__tech {
       float: left;
       height: 120px;

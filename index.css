@@ -123,13 +123,28 @@ a.weixin:hover + .header__contact__item__weixin {
   transform: translateY(0);
 }
 
-.main .section {
-  position: relative;
+.section {
   height: 100%;
   padding-top: 70px;
 }
 
-.main .section .wrapper > .arrow {
+.section > .fa {
+  font-size: 700px;
+  display: block;
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  width: 98%;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.arrow {
   display: block;
   position: absolute;
   bottom: 40px;
@@ -147,20 +162,16 @@ a.weixin:hover + .header__contact__item__weixin {
   cursor: pointer;
 }
 
-.main .section > .fa {
-  font-size: 700px;
-  display: block;
-  position: absolute;
-  right: -30px;
-  bottom: 0;
-}
-
 .welcome {
   background-color: #4284f3;
   background-image: url("http://area.sinaapp.com/bingImg");
 }
 
 .welcome .wrapper {
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   height: 100%;
   overflow: hidden;
 }
@@ -219,13 +230,6 @@ a.weixin:hover + .header__contact__item__weixin {
 
 .projects > .fa {
   color: #4fb985;
-}
-
-.projects .wrapper {
-  max-width: 1200px;
-  width: 98%;
-  margin: 0 auto;
-  padding: 0 120px;
 }
 
 .projects__header {
@@ -308,17 +312,39 @@ a.weixin:hover + .header__contact__item__weixin {
   background: #9c4dcc;
 }
 
-.demos .wrapper {
-  max-width: 1200px;
-  width: 98%;
-  margin: 0 auto;
-  padding: 0 120px;
+.demos > .fa {
+  color: #9845ca;
 }
 
 .demos__header {
   opacity: 0;
   transform: translateX(-30px);
   transition: all .3s ease-in;
+}
+
+.demos__demos-demo {
+  float: left;
+  width: calc(33.33333333% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.demos__demos-demo:nth-child(3n) {
+  margin-right: 0;
+}
+
+.demos__demos-demo__img {
+  display: block;
+  background-size: cover;
+  padding-bottom: 100%;
+}
+
+.demos__demos-demo__img.weather {
+  background-image: url("./assets/weather-forecast.png");
+}
+
+.demos__demos-demo__img.frogger {
+  background-image: url("./assets/frogger.png");
 }
 
 .techs {
@@ -330,13 +356,6 @@ a.weixin:hover + .header__contact__item__weixin {
   color: #304b57;
 }
 
-.techs .wrapper {
-  max-width: 1200px;
-  width: 98%;
-  margin: 0 auto;
-  padding: 0 120px;
-}
-
 .techs__graphic {
   position: absolute;
   top: 0;
@@ -345,8 +364,8 @@ a.weixin:hover + .header__contact__item__weixin {
   left: 0;
   width: 98%;
   max-width: 600px;
-  height: 400px;
-  margin: 100px auto auto auto;
+  padding: 120px 0;
+  margin: auto;
 }
 
 .techs__graphic__tech {
