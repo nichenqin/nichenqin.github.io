@@ -411,11 +411,11 @@ a.weixin:hover + .header__contact__item__weixin {
 }
 
 .about-me {
-  background: #f9a825;
+  background: #f57c00;
 }
 
 .about-me > .fa {
-  color: #f9a41b;
+  color: #eb7700;
 }
 
 .dots {
