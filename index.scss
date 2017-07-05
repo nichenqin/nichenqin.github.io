@@ -137,6 +137,13 @@ a {
         cursor: pointer;
       }
     }
+    >.fa {
+      font-size: 700px;
+      display: block;
+      position: absolute;
+      right: -30px;
+      bottom: 0;
+    }
   }
 }
 
@@ -194,12 +201,7 @@ a {
 .projects {
   background: #56bc8a;
   >.fa {
-    font-size: 700px;
-    display: block;
     color: darken(#56bc8a, 2);
-    position: absolute;
-    right: -30px;
-    bottom: 0;
   }
   .wrapper {
     max-width: 1200px;
@@ -290,6 +292,9 @@ a {
 .techs {
   background: #34515e;
   position: relative;
+  >.fa {
+    color: darken(#34515e, 2)
+  }
   .wrapper {
     max-width: 1200px;
     width: 98%;
@@ -353,12 +358,15 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 80px;
+    bottom: 120px;
   }
 }
 
 .about-me {
   background: #f9a825;
+  >.fa {
+    color: darken(#f9a825, 2);
+  }
 }
 
 .dots {

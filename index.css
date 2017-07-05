@@ -147,6 +147,14 @@ a.weixin:hover + .header__contact__item__weixin {
   cursor: pointer;
 }
 
+.main .section > .fa {
+  font-size: 700px;
+  display: block;
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+}
+
 .welcome {
   background-color: #4284f3;
   background-image: url("http://area.sinaapp.com/bingImg");
@@ -210,12 +218,7 @@ a.weixin:hover + .header__contact__item__weixin {
 }
 
 .projects > .fa {
-  font-size: 700px;
-  display: block;
   color: #4fb985;
-  position: absolute;
-  right: -30px;
-  bottom: 0;
 }
 
 .projects .wrapper {
@@ -323,6 +326,10 @@ a.weixin:hover + .header__contact__item__weixin {
   position: relative;
 }
 
+.techs > .fa {
+  color: #304b57;
+}
+
 .techs .wrapper {
   max-width: 1200px;
   width: 98%;
@@ -400,11 +407,15 @@ a.weixin:hover + .header__contact__item__weixin {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 80px;
+  bottom: 120px;
 }
 
 .about-me {
   background: #f9a825;
+}
+
+.about-me > .fa {
+  color: #f9a41b;
 }
 
 .dots {
