@@ -163,6 +163,7 @@ a.weixin:hover + .header__contact__item__weixin {
 }
 
 .welcome {
+  z-index: 99999;
   background-color: #4284f3;
   background-image: url("http://area.sinaapp.com/bingImg");
 }
