@@ -115,13 +115,12 @@ a {
 
 .main {
   .section {
-    min-height: 100%;
-    height: auto;
+    position: relative;
+    height: 100%;
     padding-top: 70px;
     .wrapper {
       >.arrow {
         display: block;
-        content: '';
         position: absolute;
         bottom: 40px;
         left: 50%;
@@ -145,7 +144,6 @@ a {
   background-color: #4284f3;
   background-image: url("http://area.sinaapp.com/bingImg");
   .wrapper {
-    position: relative;
     height: 100%;
     overflow: hidden;
     >* {
@@ -195,7 +193,6 @@ a {
 
 .projects {
   background: #56bc8a;
-  position: relative;
   >.fa {
     font-size: 700px;
     display: block;
@@ -298,8 +295,6 @@ a {
     width: 98%;
     margin: 0 auto;
     padding: 0 120px;
-    height: 100%;
-    position: relative;
   }
   &__graphic {
     position: absolute;
@@ -310,7 +305,7 @@ a {
     width: 98%;
     max-width: 600px;
     height: 400px;
-    margin: 70px auto auto auto;
+    margin: 100px auto auto auto;
     &__tech {
       float: left;
       height: 120px;
@@ -443,7 +438,9 @@ a {
       margin-bottom: 20px;
     }
   }
-  .dots {
+  .dots,
+  .button,
+  .main .section .wrapper>.arrow {
     display: none;
   }
 }

@@ -124,14 +124,13 @@ a.weixin:hover + .header__contact__item__weixin {
 }
 
 .main .section {
-  min-height: 100%;
-  height: auto;
+  position: relative;
+  height: 100%;
   padding-top: 70px;
 }
 
 .main .section .wrapper > .arrow {
   display: block;
-  content: '';
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -154,7 +153,6 @@ a.weixin:hover + .header__contact__item__weixin {
 }
 
 .welcome .wrapper {
-  position: relative;
   height: 100%;
   overflow: hidden;
 }
@@ -209,7 +207,6 @@ a.weixin:hover + .header__contact__item__weixin {
 
 .projects {
   background: #56bc8a;
-  position: relative;
 }
 
 .projects > .fa {
@@ -331,8 +328,6 @@ a.weixin:hover + .header__contact__item__weixin {
   width: 98%;
   margin: 0 auto;
   padding: 0 120px;
-  height: 100%;
-  position: relative;
 }
 
 .techs__graphic {
@@ -344,7 +339,7 @@ a.weixin:hover + .header__contact__item__weixin {
   width: 98%;
   max-width: 600px;
   height: 400px;
-  margin: 70px auto auto auto;
+  margin: 100px auto auto auto;
 }
 
 .techs__graphic__tech {
@@ -480,7 +475,9 @@ a.weixin:hover + .header__contact__item__weixin {
     margin: 0 auto;
     margin-bottom: 20px;
   }
-  .dots {
+  .dots,
+  .button,
+  .main .section .wrapper > .arrow {
     display: none;
   }
 }
