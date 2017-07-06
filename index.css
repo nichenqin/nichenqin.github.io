@@ -373,6 +373,29 @@ a.weixin:hover + .header__contact__item__weixin {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all .2s ease-in-out;
+}
+
+.demos__demos-demo:nth-of-type(2) {
+  transition-delay: .1s;
+}
+
+.demos__demos-demo:nth-of-type(3) {
+  transition-delay: .2s;
+}
+
+.demos__demos-demo:nth-of-type(4) {
+  transition-delay: .3s;
+}
+
+.demos__demos-demo:nth-of-type(5) {
+  transition-delay: .4s;
+}
+
+.demos__demos-demo:nth-of-type(6) {
+  transition-delay: .5s;
 }
 
 .demos__demos-demo:nth-child(3n) {
@@ -625,6 +648,11 @@ a.weixin:hover + .header__contact__item__weixin {
   opacity: 1;
   -webkit-transform: translateX(0);
   transform: translateX(0);
+}
+
+.current .demos__demos-demo {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .current .techs__graphic__tech {
